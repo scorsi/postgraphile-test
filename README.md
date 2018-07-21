@@ -35,7 +35,7 @@ query {
 To register an account:
 ```graphql
 mutation {
-  registerPerson(input: {firstName: "Sylvain", lastName: "Corsini", email:"sylvain.corsini@protonmail.com", password:"secret"}) {
+  registerPerson(input: {firstName: "Sylvain", lastName: "Corsini", email: "sylvain.corsini@protonmail.com", password: "secret"}) {
     person {
       id
     }
