@@ -70,3 +70,21 @@ Which will returns you:
   }
 }
 ```
+
+You can delete your freshly created account:
+```graphql
+mutation {
+  deletePersonById(input: {id: 11}) {
+    deletedPersonId
+  }
+}
+```
+
+And if you try again to run the currentPerson query, you will get:
+```json
+{
+  "data": {
+    "currentPerson": null
+  }
+}
+```
